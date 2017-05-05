@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.summitworks.www.util&apos; to &apos;RememberPasswordWithJSPServlet/src&apos;&#x0D;&#x0A;- Original project: &apos;LibraryManagementSystem&apos;&#x0D;&#x0A;- Destination element: &apos;RememberPasswordWithJSPServlet/src&apos;&#x0D;&#x0A;- Original element: &apos;LibraryManagementSystem/src/com.summitworks.www.util&apos;" description="Copy package" destination="=RememberPasswordWithJSPServlet/src" element1="/src&lt;com.summitworks.www.util" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1491951656540" version="1.0"/>
+</session>

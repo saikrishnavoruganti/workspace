@@ -1,0 +1,47 @@
+package multiplication;
+
+public class Average {
+	
+
+		public static void main(String[] args)
+	    {
+	        int upperBoundNumber = 100;
+	        
+	        if (upperBoundNumber <= 0) {
+	            System.out.println("Error: upperbound less than 0!");
+	            return;
+	        }
+	        
+	        Average aAverage = new Average();
+	        aAverage.printSumNumbersUsingForLoop(upperBoundNumber);
+	    }
+		 private void printSumNumbersUsingForLoop(int number)
+		    {
+		        long sum = 0L;
+		        for(int i = 1; i <= number; i++) {
+		            sum += i;
+		        }
+		        System.out.println("Sum the "+number+" numbers use a \"for\" loop.");
+		        System.out.println("The sum is " + sum);
+		        System.out.println("The average is "+ ((double) sum / number));
+		    }
+	
+
+private void printSumOddNumbers(int lowerNumber, int upperNumber)
+{
+    long count = 0L;
+    long sum   = 0L;
+    for (int i = lowerNumber; i <= upperNumber; i++) {
+        if (i % 2 != 0) {
+            continue;
+        }
+        sum += i;
+        count++;
+    }
+    System.out.println("5. Sum only the odd numbers from "+lowerNumber+" to "+upperNumber+", and compute the average.");
+    System.out.println("The sum is " + sum);
+    System.out.printf ("The average is %.2f", ((double) sum / count));
+    System.out.println();
+}
+}
+

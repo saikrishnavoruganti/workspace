@@ -1,0 +1,23 @@
+package multiplication;
+
+public class Oddnum {
+	
+
+private void printSumOddNumbers(int lowerNumber, int upperNumber)
+{
+    long count = 0L;
+    long sum   = 0L;
+    for (int i = lowerNumber; i <= upperNumber; i++) {
+        if (i % 2 != 0) {
+            continue;
+        }
+        sum += i;
+        count++;
+    }
+    System.out.println("5. Sum only the odd numbers from "+lowerNumber+" to "+upperNumber+", and compute the average.");
+    System.out.println("The sum is " + sum);
+    System.out.printf ("The average is %.2f", ((double) sum / count));
+    System.out.println();
+}
+
+}

@@ -1,0 +1,19 @@
+package multiplication;
+
+import java.util.Scanner;
+
+public class CheckOddEven {   
+	   public static void main(String[] args) {  
+		   int n;
+		   Scanner in = new Scanner(System.in);
+		   
+		   n = in.nextInt();
+	      System.out.println("The number is " +n);
+	      if ( n % 2 <= 0 ) {
+	         System.out.println( "odd" );
+	      } else {
+	         System.out.println( "even" );
+	      }
+	      System.out.println( "Bye " );
+	   }
+	}

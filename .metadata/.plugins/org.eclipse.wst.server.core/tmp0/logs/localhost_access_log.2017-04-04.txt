@@ -1,0 +1,4 @@
+127.0.0.1 - - [04/Apr/2017:13:47:43 -0400] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [04/Apr/2017:13:47:44 -0400] "GET /LoginRegistrationExampleDemo/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Apr/2017:13:47:47 -0400] "GET /LoginRegistrationExampleDemo/Login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Apr/2017:13:47:49 -0400] "GET /LoginRegistrationExampleDemo/registration.html HTTP/1.1" 304 -

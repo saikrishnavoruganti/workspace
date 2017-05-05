@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript" src="angular.min.js"></script>
+<script src="app.js"></</script>
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="HelloCntr">
+{{hellomsg}}
+{{Employee.name}}
+<input id="Text1" ng-model="hellomsg" type="text"/>
+</div>
+</body>
+</html>

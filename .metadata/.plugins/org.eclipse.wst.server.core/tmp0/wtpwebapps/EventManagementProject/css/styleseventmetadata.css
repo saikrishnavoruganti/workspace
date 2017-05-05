@@ -1,0 +1,17 @@
+body{
+
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:22px;
+  background: url(../images/manage.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+#a
+{
+	color: #ff0080;
+	text-align: right;
+	
+}

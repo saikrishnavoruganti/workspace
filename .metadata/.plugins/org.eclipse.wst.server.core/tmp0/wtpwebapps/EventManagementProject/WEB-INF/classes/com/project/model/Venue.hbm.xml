@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 11, 2017 7:41:16 PM by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.project.model.Venue" table="VENUE" schema="SYSTEM" optimistic-lock="version">
+        <id name="venueid" type="big_decimal">
+            <column name="VENUEID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="venuename" type="string">
+            <column name="VENUENAME" length="20" />
+        </property>
+        <property name="streetname" type="string">
+            <column name="STREETNAME" length="100" />
+        </property>
+        <property name="aptno" type="string">
+            <column name="APTNO" length="20" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="20" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="20" />
+        </property>
+        <property name="zip" type="string">
+            <column name="ZIP" length="20" />
+        </property>
+        <property name="country" type="string">
+            <column name="COUNTRY" length="20" />
+        </property>
+        <property name="phonenumber" type="big_decimal">
+            <column name="PHONENUMBER" precision="22" scale="0" />
+        </property>
+        <property name="mobilenumber" type="big_decimal">
+            <column name="MOBILENUMBER" precision="22" scale="0" />
+        </property>
+        <property name="emailid" type="string">
+            <column name="EMAILID" length="50" />
+        </property>
+        <set name="events" table="EVENT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="VENUEID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.project.model.Event" />
+        </set>
+    </class>
+</hibernate-mapping>

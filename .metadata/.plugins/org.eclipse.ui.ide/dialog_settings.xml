@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Cornerstone NJ\Desktop\Talk_Web_Services"/>
+			<item value="C:\Users\Cornerstone NJ\Desktop\Talk_SummitWorks_WebServices_Project"/>
+			<item value="C:\Users\Cornerstone NJ\workspace\EventManagement"/>
+			<item value="H:\EventManagement"/>
+			<item value="C:\Users\Cornerstone NJ\Downloads\EventManagementProject-44ab95cd9eb3319f2a1cb34973fc1f93efc7cf5c"/>
+			<item value="H:\AssetManagement"/>
+			<item value="H:\Library_Management"/>
+			<item value="C:\Users\Cornerstone NJ\Desktop\MVCApplication"/>
+			<item value="C:\Users\Cornerstone NJ\Desktop\LibraryManagementSystem-master"/>
+			<item value="C:\Users\Cornerstone NJ\Desktop\AssociatoinsListExample"/>
+			<item value="C:\Users\Cornerstone NJ\Desktop\onlinelibrary"/>
+			<item value="C:\Users\Cornerstone NJ\Desktop\LoginRegistrationExampleDemo"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="700" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="642" key="DIALOG_HEIGHT"/>
+		<item value="619" key="DIALOG_X_ORIGIN"/>
+		<item value="96" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

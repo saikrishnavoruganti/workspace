@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 11, 2017 7:41:16 PM by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.project.model.Eventtype" table="EVENTTYPE" schema="SYSTEM" optimistic-lock="version">
+        <composite-id name="id" class="com.project.model.EventtypeId">
+            <key-property name="eventid" type="big_decimal">
+                <column name="EVENTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="eventtypeid" type="big_decimal">
+                <column name="EVENTTYPEID" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="eventtypename" type="string">
+            <column name="EVENTTYPENAME" length="20" />
+        </property>
+        <property name="eventtypedescription" type="string">
+            <column name="EVENTTYPEDESCRIPTION" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

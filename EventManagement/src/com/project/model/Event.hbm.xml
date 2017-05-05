@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 15, 2017 8:18:30 PM by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.project.model.Event" table="EVENT" schema="SYSTEM" optimistic-lock="version">
+        <id name="eventid" type="big_decimal">
+            <column name="EVENTID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="eventtype" type="string">
+            <column name="EVENTTYPE" length="20" />
+        </property>
+        <property name="eventtitle" type="string">
+            <column name="EVENTTITLE" length="100" />
+        </property>
+        <property name="eventidentifier" type="string">
+            <column name="EVENTIDENTIFIER" length="20" />
+        </property>
+        <property name="startdate" type="date">
+            <column name="STARTDATE" length="7" />
+        </property>
+        <property name="enddate" type="date">
+            <column name="ENDDATE" length="7" />
+        </property>
+        <property name="eventdescription" type="string">
+            <column name="EVENTDESCRIPTION" length="500" />
+        </property>
+        <property name="custommessage" type="string">
+            <column name="CUSTOMMESSAGE" length="500" />
+        </property>
+        <property name="instructions" type="string">
+            <column name="INSTRUCTIONS" length="500" />
+        </property>
+        <property name="cfpProcess" type="string">
+            <column name="CFP_PROCESS" length="20" />
+        </property>
+        <property name="eventtracks" type="string">
+            <column name="EVENTTRACKS" length="20" />
+        </property>
+        <property name="venue" type="string">
+            <column name="VENUE" length="20" />
+        </property>
+        <set name="vendors" table="ATTENDS" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="EVENTID" precision="22" scale="0" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.project.model.Vendor">
+                <column name="VENDORID" precision="22" scale="0" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="clients" table="CREATES" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="EVENTID" precision="22" scale="0" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.project.model.Client">
+                <column name="CLIENTID" precision="22" scale="0" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

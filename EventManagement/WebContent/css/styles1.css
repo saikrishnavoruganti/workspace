@@ -1,0 +1,31 @@
+
+
+#{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+ background-image: url("/WebContent/images/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment:iniital ;
+    background-position: 100% 100% 100% 100%
+}
+
+#container h2{
+	font-size:11px;
+}
+#a
+{
+	text-align: right;
+}
+#This
+{
+	background-image: url("../image/1.jpg");
+}
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+th {
+    height: 50px;
+    border: 1px solid black;
+}
